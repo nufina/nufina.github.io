@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Mr+Bedfort|Leckerli+One|Neucha|Sacramento|Sedgwick+Ave|Yesteryear|Merienda');
+
+body {
+    margin: 0;
+    background-color: #ee5050;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+
+.container {
+    height: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 60px auto-fit;
+}
+
+
+/*HEADER*/
+.header {
+    grid-column: 1 / -1;
+    display: flex;
+    background-color: #ee5050;
+    color: white;
+    border-bottom: 1.5px solid #e83a3a;
+}
+
+
+/*LOGO*/
+.logo {
+    display: block;
+    margin: 40px auto 10px 100px;
+    padding: 0;
+    color: #ffffff;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1em;
+}
+
+.logo img {
+    width: 24px;
+    height: 24px;
+}
+
+
+.menu {
+    margin: 30px 50px 15px auto;
+    float: right;
+    display: inline;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 8px;
+    color: white;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1em;
+}
+.button {
+    background-color: #e83a3a; /* Green */
+    border: none;
+    color: #fff;
+    padding: 6px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 6px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #e83a3a;
+}
+
+/*MAIN PAGE*/
+.main {
+    grid-column: 1 / 8;
+    background-color: #ee5050;
+    background-size: cover;
+    color: white;
+}
+
+.submain {
+    grid-column: 8 / -1;
+    background-color: #ee5050;
+    background-size: cover;
+    color: white;
+}
+
+.main h1 {
+    margin: 60px auto auto 100px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 3em;
+}
+
+.main p {
+    margin: 40px 100px auto 100px;
+    font-family: "Quicksand", sans-serif;
+    font-size: 0.8em;
+}
+
+.contact {
+    margin: 40px 100px auto 100px;
+    
+}
+.contact a img {
+    float: left;
+    width: 18px;
+    height: 18px;
+    padding: 5px;
+}
+
+.submain h3 {
+    margin: 50px 10px auto 20px;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.3em;
+}
+
+.submain a {
+    margin: 15px 10px auto 20px;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.1em;
+    font-weight: 400;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.submain a:hover{
+    color: #e83a3a;
+}
+
+.submain p {
+    margin: 5px 10px auto 20px;
+    font-family: "Quicksand", sans-serif;
+    font-size: 0.8em;
+}
+
+
+
+.submain footer {
+    margin: 20px 10px auto 20px;
+    display: inline-block;
+}
+
+footer img {
+    
+}
+
+@media screen and (max-width: 320px){
+    .container {
+        grid-template-rows: auto;
+    }
+    .header, .main, .submain, .footer {
+    grid-column: 1 / -1;
+    
+    }
+    
+    .menu button {
+        margin: 20px auto auto 20px;
+        float: left;
+        display: block;
+    }
+    
+    .main h1, .main p {
+        margin: 20px 20px auto 20px;
+    }
+    
+    .submain h3 {
+        margin: 30px 20px auto 20px;
+        font-size: 1em;
+    }
+    
+    .submain a, .submain p {
+        margin: 10px 20px auto 20px;
+    }
+    
+    .submain a {
+        font-size: 0.8em; 
+    }
+    
+    .submain p {
+        font-size: 0.6em; 
+    }
+    
+    .contact {
+        margin: 20px auto auto 20px;
+    }
+    
+    .contact a img {
+        width: 16px;
+        height: 16px;
+        float: left;
+    }
+}
