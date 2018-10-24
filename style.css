@@ -56,9 +56,9 @@ body {
     font-size: 1em;
 }
 .button {
-    background-color: #e83a3a; /* Green */
+    background-color: #fff; /* Green */
     border: none;
-    color: #fff;
+    color: #e83a3a;
     padding: 6px 8px;
     text-align: center;
     text-decoration: none;
@@ -69,8 +69,8 @@ body {
 }
 
 button:hover {
-    background-color: #fff;
-    color: #e83a3a;
+    background-color: #e83a3a;
+    color: #fff;
 }
 
 /*MAIN PAGE*/
@@ -114,13 +114,13 @@ button:hover {
 .submain h3 {
     margin: 50px 10px auto 20px;
     font-family: "Quicksand", sans-serif;
-    font-size: 1.3em;
+    font-size: 1em;
 }
 
 .submain a {
     margin: 15px 10px auto 20px;
     font-family: "Quicksand", sans-serif;
-    font-size: 1.1em;
+    font-size: 0.8em;
     font-weight: 400;
     text-decoration: none;
     color: #ffffff;
@@ -133,7 +133,7 @@ button:hover {
 .submain p {
     margin: 5px 10px auto 20px;
     font-family: "Quicksand", sans-serif;
-    font-size: 0.8em;
+    font-size: 0.6em;
 }
 
 
@@ -141,10 +141,6 @@ button:hover {
 .submain footer {
     margin: 20px 10px auto 20px;
     display: inline-block;
-}
-
-footer img {
-    
 }
 
 @media screen and (max-width: 320px){
